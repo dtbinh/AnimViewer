@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnimViewer", "AnimViewer.vcproj", "{47154562-831D-40EF-ACAB-DCA533CE6068}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcproj", "{AADD959B-7257-4EFE-9266-A6862ABAACCD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{47154562-831D-40EF-ACAB-DCA533CE6068} = {47154562-831D-40EF-ACAB-DCA533CE6068}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
