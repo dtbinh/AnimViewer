@@ -62,7 +62,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="SDL.lib SDLmain.lib libpng.lib OpenGL32.lib glu32.lib loki_D.lib boost_thread-vc80-mt-gd-1_47.lib"
+				AdditionalDependencies="SDL.lib SDLmain.lib libpng.lib OpenGL32.lib glu32.lib loki_D.lib"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)..\..\lib&quot;"
 				GenerateDebugInformation="true"
@@ -139,7 +139,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="SDL.lib SDLmain.lib libpng.lib OpenGL32.lib glu32.lib loki.lib boost_system-vc80-mt-1_47.lib"
+				AdditionalDependencies="SDL.lib SDLmain.lib libpng.lib OpenGL32.lib glu32.lib loki.lib"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)..\..\lib&quot;"
 				GenerateDebugInformation="true"
