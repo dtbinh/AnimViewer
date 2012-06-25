@@ -51,15 +51,15 @@ bool Raytracer::initialize( Scene* scene, size_t width, size_t height, Camera& c
     // Spatial Data Structure implementation here
 
     // get near clip plane and far clip plane, up and right step vector
-    real_t near_clip = camera.get_near_clip();
-    real_t far_clip  = camera.get_far_clip();
-    real_t fov       = camera.get_fov_radians();
+    real_t near_clip = camera.GetNearClip();
+    real_t far_clip  = camera.GetFarClip();
+    real_t fov       = camera.GetFovRadians();
     real_t near_clip_height = near_clip * tan(fov/2);
     real_t near_clip_width  = near_clip_height * fWidth / fHeight;
 
-    m_camera_pos   = camera.get_position();
-    m_camera_dir  = camera.get_direction() * near_clip;
-    Vector3 unit_up    = normalize(camera.get_up());
+    m_camera_pos   = camera.GetPosition();
+    m_camera_dir  = camera.GetDirection() * near_clip;
+    Vector3 unit_up    = normalize(camera.GetUp());
     Vector3 unit_right = normalize(cross(m_camera_dir, unit_up));
     m_up_step    = unit_up * near_clip_height / fHeight * 2;
     m_right_step = unit_right * near_clip_width / fWidth * 2;

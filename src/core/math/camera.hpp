@@ -30,28 +30,27 @@ public:
 
     // accessor functions
 
-    const Vector3& get_position() const { return mPosition; }    //< Returns the world position.
-    Vector3 get_direction() const {return mOrientation * -Vector3::UnitZ;}
-    Vector3 get_up() const {return mOrientation * Vector3::UnitY;}
+    const Vector3& GetPosition() const { return mPosition; }    //< Returns the world position.
+    Vector3 GetDirection() const {return mOrientation * -Vector3::UnitZ;}
+    Vector3 GetUp() const {return mOrientation * Vector3::UnitY;}
 
     // Returns the field of view in radians of the y-axis.
-    real_t get_fov_radians() const { return mFov; }
+    real_t GetFovRadians() const { return mFov; }
     // Returns the field of view in degrees of the y-axis.
-    real_t get_fov_degrees() const { return mFov * 180.0f / PI; }
+    real_t GetFovDegrees() const { return mFov * 180.0f / PI; }
     // Returns the aspect ratio (width/height).
-    real_t get_aspect_ratio() const {return mAspectRatio;}
+    real_t GetAspectRatio() const {return mAspectRatio;}
     // Returns the distance from the camera to the near clipping plane.
-    real_t get_near_clip()   const {return mNearClip;}
+    real_t GetNearClip()   const {return mNearClip;}
     // Returns the distance from the camera to the far clipping plane.
-    real_t get_far_clip()    const {return mFarClip;}
+    real_t GetFarClip()    const {return mFarClip;}
 
     void SetPosition(const Vector3& newPosition) {mPosition = newPosition;}
     void SetFOV(real_t fov)             { mFov = fov;           }
     void SetAspectRatio(real_t ratio)   { mAspectRatio = ratio; }
     void SetNearClip(real_t nearClip)   { mNearClip = nearClip; }
     void SetFarClip(real_t farClip)     { mFarClip = farClip;   }
-
-    // mutator functions
+    void SetOrientation(const Quaternion& orientation) {mOrientation = orientation;}
 
     // translates camera position by v
     void Translate( const Vector3& v ) { mPosition += mOrientation * v; }
@@ -66,14 +65,10 @@ private:
     // rotates camera about the given axis
     void Rotate( const Vector3& axis, real_t radians ) {mOrientation = normalize( Quaternion( axis, radians ) * mOrientation );}
 
-    // members
-public:
+private:
     // The orientation of the camera, relative to a default direction
     // of negative z axis and default up vector of y axis.
     Quaternion mOrientation;
-
-
-private:
     Vector3 mPosition;  // The world position of the camera.
     real_t mAspectRatio;// The aspect ratio (width/height).
     real_t mFov;        // Field of view of y-axis, in radians.

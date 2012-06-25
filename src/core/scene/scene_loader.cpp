@@ -184,7 +184,7 @@ static void parse_elem( const TiXmlElement* parent, bool required, const char* n
 
 static void parse_camera( const TiXmlElement* elem, Camera* camera )
 {
-    Quaternion ori = camera->mOrientation;
+    Quaternion ori;
     Vector3 position;
     real_t fov;
     real_t nearClip;
@@ -196,8 +196,9 @@ static void parse_camera( const TiXmlElement* elem, Camera* camera )
     parse_elem( elem, true,  STR_FAR,       &farClip );
     parse_elem( elem, true,  STR_POSITION,  &position );
     parse_elem( elem, true,  STR_ORIENT,    &ori );
+
     // normalize orientation
-    camera->mOrientation = normalize( ori );
+    camera->SetOrientation( normalize( ori ) );
     camera->SetPosition(position);
     camera->SetFarClip(farClip);
     camera->SetNearClip(nearClip);

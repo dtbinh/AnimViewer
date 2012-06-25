@@ -1,8 +1,8 @@
 /**
- * @file main_rayracer.cpp
- * @brief Raytracer entry
+ * @file main.cpp
+ * @brief 
  *
- * @author Eric Butler (edbutler)
+ * @author Yantong Liu
  */
 
 
@@ -12,7 +12,6 @@
 
 #include <iostream>
 #include <cstring>
-
 
 int main( int argc, char* argv[] )
 {

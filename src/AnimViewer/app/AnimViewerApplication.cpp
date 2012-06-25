@@ -35,14 +35,14 @@ static void render_scene( const Scene& scene )
 
     glMatrixMode( GL_PROJECTION );
     glLoadIdentity();
-    gluPerspective( camera.get_fov_degrees(),
-                    camera.get_aspect_ratio(),
-                    camera.get_near_clip(),
-                    camera.get_far_clip() );
+    gluPerspective( camera.GetFovDegrees(),
+                    camera.GetAspectRatio(),
+                    camera.GetNearClip(),
+                    camera.GetFarClip() );
 
-    const Vector3& campos = camera.get_position();
-    const Vector3 camref = camera.get_direction() + campos;
-    const Vector3& camup = camera.get_up();
+    const Vector3& campos = camera.GetPosition();
+    const Vector3 camref = camera.GetDirection() + campos;
+    const Vector3& camup = camera.GetUp();
 
     glMatrixMode( GL_MODELVIEW );
     glLoadIdentity();
