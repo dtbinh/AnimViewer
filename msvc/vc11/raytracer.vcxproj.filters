@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0c88469d-ca61-42d1-8a00-d4a8bb4f74bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\application">
+      <UniqueIdentifier>{41ad2bf8-9f2c-40f8-a6c5-80cf62416ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scene">
+      <UniqueIdentifier>{ddf544a4-e49a-4aaf-97ec-3adc5669b88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{a56503b0-0c77-47ec-8a57-ae9534389e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{77ee1de5-4a39-4433-bf45-ea1c12b69230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\tinyxml">
+      <UniqueIdentifier>{bbc1b8ef-b184-4289-b677-39b45ce09006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AnimViewer">
+      <UniqueIdentifier>{99edfcba-5c0c-4027-8980-88dbef753707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OS">
+      <UniqueIdentifier>{a08b7e0d-03c0-41ce-8840-1fa354fdf590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OS\windows">
+      <UniqueIdentifier>{15c5942a-b6fb-46e6-b5fd-0dd68eafe6b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\application\application.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\camera_roam.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\imageio.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\application\scene_loader.cpp">
+      <Filter>src\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\scene\bounding_box.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\scene\material.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\scene\mesh.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\scene\model.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\scene\scene.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\scene\sphere.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\scene\triangle.cpp">
+      <Filter>src\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\raytracer\main.cpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\raytracer\raycasting.cpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\raytracer\raytracer.cpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\camera.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\color.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\matrix.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\quaternion.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\ray.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\vector.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\external\tinyxml\tinyxml.cpp">
+      <Filter>external\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\external\tinyxml\tinyxmlerror.cpp">
+      <Filter>external\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\external\tinyxml\tinyxmlparser.cpp">
+      <Filter>external\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\raytracer\AnimViewerApplication.cpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\raytracer\options.cpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\OS\windows\path.cpp">
+      <Filter>src\OS\windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\application\application.hpp">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\camera_roam.hpp">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\imageio.hpp">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\opengl.hpp">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\application\scene_loader.hpp">
+      <Filter>src\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scene\bounding_box.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scene\material.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scene\mesh.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scene\model.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scene\scene.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scene\sphere.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scene\triangle.hpp">
+      <Filter>src\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\raytracer\hit_vertex_infor.hpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\raytracer\raycasting.hpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\raytracer\raytracer.hpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\camera.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\color.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\math.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\matrix.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\quaternion.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\ray.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\vector.hpp">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\external\tinyxml\tinyxml.h">
+      <Filter>external\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\raytracer\AnimViewerApplication.hpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\raytracer\options.hpp">
+      <Filter>src\AnimViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\OS\path.h">
+      <Filter>src\OS</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
